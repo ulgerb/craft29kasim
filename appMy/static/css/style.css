@@ -692,7 +692,10 @@ button {
 
 .feature_box {
     width: 100%;
-    float: left;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #ffffff;
     padding: 30px;
     box-shadow: 0px 1px 10px 1px #888888;

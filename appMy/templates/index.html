@@ -48,27 +48,19 @@
          </div>
          <div class="category_section_2">
             <div class="row">
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section active">
-                     <h1 class="bed_text">Up to 50% off | Beds</h1>
-                     <div><img src="{% static 'images/img-2.png' %}" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
+               
+               {% for i in products1 %}
+               <div class="col-4 mb-3">
+                  <a href="#">
+                     <div class="feature_box">
+                        <h1 class="readable_text">{{ i.title }}</h1>
+                        <div><img src="{{ i.image.url }}" class="image_7"></div>
+                        <div style="font-size: 24px;">₺{{ i.price }}</div>
+                     </div>
+                  </a>
                </div>
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section">
-                     <h1 class="bed_text">organized in style</h1>
-                     <div><img src="{% static 'images/img-3.png' %}" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beds_section">
-                     <h1 class="bed_text">Refurbished mixer</h1>
-                     <div><img src="{% static 'images/img-4.png' %}" class="image_2"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
-               </div>
+               {% endfor %}
+                  
             </div>
          </div>
       </div>
@@ -76,21 +68,22 @@
       <!-- beauty product section start -->
       <div class="beauty_section layout_padding">
          <div class="container">
+            <h2>Elektronik</h2>
             <div class="row">
-               <div class="col-lg-4 col-sm-12">
-                  <div class="beauty_box">
-                     <h1 class="bed_text">Beauty products</h1>
-                     <div><img src="{% static 'images/img-5.png' %}" class="image_3"></div>
-                     <div class="seemore_bt"><a href="#">see More</a></div>
-                  </div>
+               
+               {% for i in products_e %}
+               <div class="col-4 mb-3">
+                  <a href="#">
+                     <div class="feature_box">
+                        <h1 class="readable_text">{{ i.title }}</h1>
+                        <div><img src="{{ i.image.url }}" class="image_7"></div>
+                        <div style="font-size: 24px;">₺{{ i.price }}</div>
+                     </div>
+                  </a>
                </div>
-               <div class="col-lg-8 col-sm-12">
-                  <div class="beauty_box_1">
-                     <h1 class="bed_text_1">Explore trending electronics</h1>
-                     <div><img src="{% static 'images/img-6.png' %}" class="image_3"></div>
-                     <div class="seemore_bt_1"><a href="#">see More</a></div>
-                  </div>
-               </div>
+               {% endfor %}
+                  
+               
             </div>
          </div>
       </div>
