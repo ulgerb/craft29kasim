@@ -1,3 +1,4 @@
+{% load static %}
 <!-- footer section start -->
 <div class="footer_section layout_padding">
     <div class="container">
@@ -23,10 +24,10 @@
                     <p class="call_text"><a href="#">demo@gmail.com</a></p>
                     <div class="social_icon">
                         <ul>
-                            <li><a href="#"><img src="images/fb-icon.png"></a></li>
-                            <li><a href="#"><img src="images/twitter-icon.png"></a></li>
-                            <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
-                            <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+                            <li><a href="#"><img src="{% static 'images/fb-icon.png' %}"></a></li>
+                            <li><a href="#"><img src="{% static 'images/twitter-icon.png' %}"></a></li>
+                            <li><a href="#"><img src="{% static 'images/linkedin-icon.png' %}"></a></li>
+                            <li><a href="#"><img src="{% static 'images/instagram-icon.png' %}"></a></li>
                         </ul>
                     </div>
                 </div>

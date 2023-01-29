@@ -1,13 +1,14 @@
+{% load static %}
 <!--header section start -->
 <div class="header_section">
     <div class="container">
         <nav class="navbar navbar-dark bg-dark">
-            <a class="logo" href="index.html"><img src="images/logo.png"></a>
+            <a class="logo" href="index.html"><img src="{% static 'images/logo.png' %}"></a>
             <div class="search_section">
                 <ul>
                     <li><a href="#">Log In</a></li>
-                    <li><a href="#"><img src="images/shopping-bag.png"></a></li>
-                    <li><a href="#"><img src="images/search-icon.png"></a></li>
+                    <li><a href="#"><img src="{% static 'images/shopping-bag.png' %}"></a></li>
+                    <li><a href="#"><img src="{% static 'images/search-icon.png' %}"></a></li>
                 </ul>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01"
@@ -52,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div><img src="images/img-1.png" class="image_1"></div>
+                                <div><img src="{% static 'images/img-1.png' %}" class="image_1"></div>
                             </div>
                         </div>
                         <div class="button_main"><button class="all_text">All</button><input type="text"
@@ -73,7 +74,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div><img src="images/img-1.png" class="image_1"></div>
+                                <div><img src="{% static 'images/img-1.png' %}" class="image_1"></div>
                             </div>
                         </div>
                         <div class="button_main"><button class="all_text">All</button><input type="text"
@@ -94,7 +95,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div><img src="images/img-1.png" class="image_1"></div>
+                                <div><img src="{% static 'images/img-1.png' %}" class="image_1"></div>
                             </div>
                         </div>
                         <div class="button_main"><button class="all_text">All</button><input type="text"
@@ -104,10 +105,10 @@
                 </div>
             </div>
             <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                <i class=""><img src="images/left-icon.png"></i>
+                <i class=""><img src="{% static 'images/left-icon.png' %}"></i>
             </a>
             <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                <i class=""><img src="images/right-icon.png"></i>
+                <i class=""><img src="{% static 'images/right-icon.png' %}"></i>
             </a>
         </div>
     </div>
